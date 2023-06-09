@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-m.css">
+    <title>ManagementSite</title>
+</head>
+<body>
+    <h1>Główna</h1>
+    <form action="/auth/main" method="POST" >
+        <label for="imie">Imie</label>
+            <input type="text" name="name" id="imie">
+        <label for="nazwisko">Nazwisko</label>
+            <input type="text" name="surrname" id="nazwisko">
+        <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        <label for="haslo">Hasło</label>
+            <input type="password" name="password" id="haslo">
+        <label for="powtorz-haslo">Powtorz haslo</label>
+            <input type="password" name="passwordRepeat" id="powtorz-haslo">
+        <label for="select-type">Typ konta</label>
+        <select name="accountType">
+            <option  value="admin">Administrator</option>
+            <option selected value="user">Nauczyciel</option>
+        </select>
+
+        <input type="submit" value="Przeslij">
+    </form>
+    {{#if message}}
+        <h4>{{message}}</h4>
+    {{/if}}
+    <script src="script-m.js"></script>
+</body>
+</html>

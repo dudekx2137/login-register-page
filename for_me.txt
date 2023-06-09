@@ -1,0 +1,10 @@
+npm init -y // dodaje plik json w ktorym sa te
+npm i express mysql dotenv hbs //instalowanie potrzebnych dependencies przy uzyciu npm
+w package.json do skryptu dodac "nazwa": "nodemon nazwa.js" aby uruchomic ten skrypt
+nodemon pozwala wyswietlac zmiany ktore dokonalismy w projekcie bez potrzeby restartowania serveram
+    moze i na localhoscie nie jest to problem jednak w wiekszych projektach jest to potrzebne
+plik .env z wrazliwymi danymi; dzieki .env moge np. w funkcji ktora laczy sie z baza danych, zamiast tych wrazliwych loginow i hasel uzyc zmiennej ktora uzylem w pliku .env(np. database: process.env.nazwazmiennej) kox
+hbs to view engine, musze utwozyc folder views i index.hbs
+
+generalnie folder routes nie jest potrzebny, bo mozna to wszystko zrobic w app.js jednak tak jest bardziej zorganizowaniexd
+bcryptjs, moge dodac ale nie wiem czy jest sens, nie musi byc to szyfrowane, bo to lokalny program
